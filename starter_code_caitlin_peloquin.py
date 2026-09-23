@@ -50,12 +50,26 @@ print("------")
 #Question 9
 numbers_9 = [10, 20, 30, 40, 50, 60, 70, 80]
 numbers_even = []
-for number_9 in numbers_9:
-    print(number_9)
+numbers_odd = []
+for index in range(1,len(numbers_9),2):
+    numbers_even.append(numbers_9[index])
+print(numbers_even)
+for index in range(0,len(numbers_9),2):
+    numbers_odd.append(numbers_9[index])
+print(numbers_odd)
+print("------")
 #Question 10
-numbers_10 = [10, 20, 30, 40, 50, 60, 70, 80]
-numbers_10_copy = numbers_10 [:]
-for index in range(2,len(numbers_10),2):
-
-
+names = ["alice", "bob", "charlie", "david"]
+names_proper = []
+for name in names:
+    names_proper.append(name.title())
+scores_10 = [85, 92,78, 90]
+name_with_score = []
+for index in range(len(names_proper)):
+    name_with_score.append(names_proper[index])
+    name_with_score.append(scores_10[index])
+print(name_with_score)
+print("------")
 #Question 11
+for index in range(1,7):
+    print(f'{index}' * index)
