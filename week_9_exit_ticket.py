@@ -118,14 +118,14 @@ for food in foods:
     if food == searched_food:
         found = True
 if found == True:
-    print(f"{searched_food} is one of your favorite foods.")
+    print(f"{searched_food} is one of your favorite foods.\n")
 else:
     print(f"{searched_food} is not one of your favorite foods.\n")
 #Question 14
 inventory = {}
 while True:
     product_name = input("What is the name of the product you want to add? ")
-    product_quant = input(f"How many {product_name}s would you like to add? ")
+    product_quant = int(input(f"How many {product_name}s would you like to add? "))
     inventory[product_name] = product_quant
     repeat = input("Would you like to add another product (yes/no) ? ")
     if repeat == 'no' or repeat == 'No' or repeat == 'NO':
