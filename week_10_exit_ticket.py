@@ -65,4 +65,6 @@ def display_result(name, average):
         elif choice == '5':
             student_name = input("Enter the student name: ")
             student_score = input("Enter the student score: ")
-            print(f"Average: {round(calculate_average(student_score,student_score,student_name),2)}")
+            print(f"Course Average: {(display_result(student_name,student_score))}")
+        else
+            break
