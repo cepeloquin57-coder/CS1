@@ -5,7 +5,11 @@ movie_names[0] = "The Matrix"
 print(movie_names [0])
 print(movie_names [-1])
 print(len(movie_names))
-for movie_name in movie_names:
-    print(movie_name)
-first_three_movie_names = movie_names [:3]
-print(first_three_movie_names)
+def print_movies(n):
+    if n == 1:
+        print(movie_names[0])
+    else:
+        print_movies(n-1)
+        print(movie_names[n-1])
+print_movies(len(movie_names))
+print(movie_names)
